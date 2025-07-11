@@ -18,10 +18,11 @@ Online = st.selectbox("Online",['Yes','No'])
 Online = 1 if Online =='Yes' else 0
 
 if st.button("Check Eligibility"):
-    input_data = np.array([Exp, Income, Family, CCAvg, Mortgage, Online])
+    input_data = np.array([[Exp, Income, Family, CCAvg, Mortgage, Online]])
     prediction = rfc_model.predict(input_data)
 
     if prediction[0] == 1:
         st.success("Loan approved")
     else:
         st.error("Loan denied")
+
