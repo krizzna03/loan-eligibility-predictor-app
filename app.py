@@ -12,7 +12,7 @@ Exp= st.number_input("Experience",min_value=0, max_value= 25)
 Income = st.number_input("Income",min_value = 0)
 Family = st.number_input("Family", min_value=0)
 CCAvg = st.number_input("CCAvg", min_value=0)
-Mortgage = st.number_input("Mortgage", min_valu=0)
+Mortgage = st.number_input("Mortgage", min_value=0)
 Online = st.selectbox("Online",['Yes','No'])
 
 Online = 1 if Online =='Yes' else 0
